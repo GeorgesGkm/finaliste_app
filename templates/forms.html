@@ -1,16 +1,16 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-<header class="bg-stone-100 dark:bg-gray-300 shadow">
+<header class="bg-stone-100 dark:bg-gray-800 shadow">
   <div class="mx-auto  max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-    <h1 class="text-3xl text-center font-bold tracking-tight text-gray-900">Formulaire de dépot </h1>
+    <h1 class="text-3xl text-center font-bold tracking-tight dark:text-white">Formulaire de dépot </h1>
   </div>
 
-  <div class="flex items-center justify-center h-100 mt-15 pt-15 dark:text-white">
-    <form class="w-full max-w-2xl" method="POST">
+  <div class="flex items-center justify-center h-100 mt-15 pt-15 ">
+    <form class="w-full max-w-2xl " method="POST">
       {% csrf_token %}
       <div class="flex -mx-3 mb-2">
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-first-name"
           >
             Nom
@@ -19,7 +19,7 @@
         </div>
         <div class="w-full md:w-1/3 px-3">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-last-name"
           >
             Post-nom
@@ -28,7 +28,7 @@
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-state"
           >
             Sexe
@@ -36,7 +36,7 @@
           <div class="relative">
             {{form.sexe}}
             <div
-              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 dark:text-white"
             >
               <svg
                 class="fill-current h-4 w-4"
@@ -54,7 +54,7 @@
       <div class="flex flex-wrap -mx-3 mb-2">
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-state"
           >
             Langage utilisé
@@ -63,7 +63,7 @@
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-state"
           >
             Department
@@ -71,7 +71,7 @@
           <div class="relative">
             {{form.departement}}
             <div
-              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 dark:text-white"
             >
               <svg
                 class="fill-current h-4 w-4"
@@ -87,7 +87,7 @@
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-state"
           >
             Promotion
@@ -95,7 +95,7 @@
           <div class="relative">
             {{form.promotion}}
             <div
-              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 dark:text-white"
             >
               <svg
                 class="fill-current h-4 w-4"
@@ -113,7 +113,7 @@
       <div class="flex -mx-1 mb-2">
         <div class="w-full md:w-1/2 px-2 mb-6 md:mb-0">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-first-name"
           >
             Directeur
@@ -122,7 +122,7 @@
         </div>
         <div class="w-full md:w-1/2 px-2">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-last-name"
           >
             Co_Directeur
@@ -133,7 +133,7 @@
       <div class="flex -mx-1 mb-2">
         <div class="w-full md:w-1/2 px-2 mb-6 md:mb-0">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-first-name"
           >
             Sujet ou Memoire
@@ -142,7 +142,7 @@
         </div>
         <div class="w-full md:w-1/2 px-2">
           <label
-            class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            class="block uppercase tracking-wide dark:text-white text-xs font-bold mb-2"
             for="grid-last-name"
           >
             Problematique
