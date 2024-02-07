@@ -1,1 +1,1 @@
-web: gunicorn finaliste_app.wsgi
+web: gunicorn core.wsgi
