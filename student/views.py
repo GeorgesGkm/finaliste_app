@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render
+from django.views.decorators.csrf import csrf_exempt
 from .models import StudentModel
 from .forms import StudentForm
 
@@ -23,6 +24,7 @@ def save_student_form(form):
             problematique=data['problematique']
         )
 
+@csrf_exempt
 def index(request, *args, **kwargs):
     context = {}
     if request.method == 'POST':
