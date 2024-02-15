@@ -11,8 +11,8 @@ class StudentModel(models.Model):
     ] 
     
     D_CHOICES =[
-        ("1", "INFORMATIQUE"),  
-        ("2", "GESTION"),
+        ("1", "INFORMATIQUE INDUSTRIELLE "),  
+        ("2", "iNFORMATIQUE DE GESTION"),
     ] 
     
     S_CHOICES =[
