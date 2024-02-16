@@ -26,7 +26,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-vkw_n^h&$nlq(1wy@3e@*9i$e&9go69u^oadovgt+ck&$5&)u1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'student',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -137,5 +138,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ADMIN_EMAIL = 'georgesgkm007@gmail.com'
+ADMIN_USERNAME = 'georges'
 ADMIN_PHONE = '+243823084146'
 ADMIN_DEAULT_PASSWORD = "4146"
